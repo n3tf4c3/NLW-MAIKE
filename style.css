@@ -1,9 +1,10 @@
-/*=== GERAL ===========================================*/
+/*=== GERAL =================================*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: hsl(170, 100%, 26%);
   --headline: hsl(210, 11%, 15%);
@@ -12,7 +13,7 @@
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
 
-  font-size: 62.5%; /* 1rem = 10px*/
+  font-size: 62.5%; /* 1rem = 10px */
 
   --nav-height: 7.2rem;
 }
@@ -24,7 +25,7 @@ body {
 }
 
 body {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 1.6rem;
 
   text-align: center;
@@ -42,15 +43,14 @@ ul {
   list-style: none;
 }
 
-/*=== HEADER ===========================================*/
-
+/*=== HEADER =================================*/
 header {
   margin-top: calc(4.1rem + var(--nav-height));
 }
 
 header::before {
-  content: "";
-  width: 100%; /*viewport toda a janela 100 pedacinhos*/
+  content: '';
+  width: 100%;
   height: calc(108rem + var(--nav-height));
   background-color: var(--brand-light);
   display: block;
@@ -71,6 +71,7 @@ header h1 {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
+
   margin-bottom: 2.4rem;
 }
 
@@ -82,6 +83,7 @@ header p {
 
   margin-bottom: 3.2rem;
 }
+
 header button {
   background: var(--primary-color);
 
@@ -116,7 +118,7 @@ header img {
 
 .stats {
   width: 32.7rem;
-  padding-block: 4rem; /*coloca 4 em cima e 4 embaixo */
+  padding-block: 4rem;
   margin-inline: auto;
 
   background-color: var(--brand-beige);
@@ -124,8 +126,8 @@ header img {
   border-radius: 0.6rem;
 
   display: flex;
-  flex-direction: column; /* Inverteu para coluna */
-  justify-content: center; /*Elemento ao meio */
+  flex-direction: column;
+  justify-content: center;
   gap: 6rem;
 }
 
@@ -143,7 +145,8 @@ header img {
   font-size: 1.6rem;
   line-height: 150%;
 }
-/*=== NAVIGATION ===========================================*/
+
+/*=== NAVIGATION =================================*/
 nav {
   display: flex;
 
@@ -182,7 +185,7 @@ nav button {
   cursor: pointer;
 }
 
-/*=== MENU-EXpanded ===========================================*/
+/*=== MENU-EXPANDED =================================*/
 body.menu-expanded {
   overflow: hidden;
 }
@@ -238,9 +241,8 @@ body.menu-expanded nav {
 }
 
 .menu .button {
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgb(0, 0, 0);
-  border-radius: 40px;
+  background: white;
+  border-radius: 4rem;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.3rem;
